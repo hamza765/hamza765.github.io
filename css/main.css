@@ -447,24 +447,24 @@ section .headerBlock {
     margin: 0;
 }
 
-/* FAQ */
+/* Contact */
 
-.faq {}
+.contact {}
 
-.faq .headerBlock {
+.contact .headerBlock {
     color: #fff !important;
 }
 
-.faq h4 {
+.contact h4 {
     font-size: 24px;
-    color: #ddd !important;
+    color: #eee !important;
 }
 
-.faq p {
+.contact p {
     font-size: 16px;
 }
 
-.faq * {
+.contact * {
     color: #999;
 }
 
