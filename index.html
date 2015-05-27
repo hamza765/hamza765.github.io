@@ -1,1 +1,397 @@
-Hello World
+<html>
+
+<head>
+    <title>Aaron Dancer | I &hearts; Code &amp; UI/UX</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" `tent="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="HandheldFriendly" content="True">
+</head>
+
+<body>
+    <div class="wrapper" style="opacity: 0">
+        <section id="home" class="vparent rs-0.25">
+            <div class="vcontent noSelect">
+                <div class="square">
+                    <h1 id="title" class="caps">Hi, I'm<br><b>Aaron<br>Dancer</b><br>I <span class="heart">&hearts;</span> Code<br>&amp; UI/UX</h1>
+                </div>
+                <div id="homeNav" class="aniscroll caps noSelect">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a data-reveal-id="contactForm">Contact</a>
+                    <a href="blog">Blog</a>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar">
+            <a class="menubutton" onclick="togglemenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <section class="collapsed menucontent" id="menucontent">
+                <ul class="noselect aniscroll">
+                    <li><a href="#home">Hi</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a data-reveal-id="contactForm">Contact</a></li>
+                    <li><a href="blog">Blog</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section id="about">
+            <div class="row aboutcontent">
+                <div class="small-12 medium-6 columns">
+                    <div class="me"></div>
+                </div>
+                <div class="small-12 medium-6 columns info">
+                    <div class="row infocontent">
+                        <h3>Aaron Dancer</h3>
+                        <h4>Code &amp; UI/UX Lover from Houston</h4>
+                        <p>
+                            I'm a self-taught programmer and overall geek at heart. I began by teaching myself C++, HTML, and CSS and started developing basic websites and applications at the age of 8. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast.
+                            <br>
+                            <br> In the past year at Coursatliy I've dedicated a lot of my time to UI/UX research and development. We aim to create a UI that addresses the most effective UX for each user.
+                            <br>
+                            <br> In recent years I've become a hackathon and event organizer. I organize various events inluding CodeRED and CodeDay Houston. I also help with organizing local and private events for organizations and companies.
+                        </p>
+                    </div>
+                    <div class="row infoandresume">
+                        <div class="infoandresumecontainer">
+                            <div class="small-12 large-6 columns contactinfo">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fa fa-twitter"></i></td>
+                                            <td>Twitter</td>
+                                            <td>@Aaron7pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-facebook"></i></td>
+                                            <td>Facebook</td>
+                                            <td>Aaron7pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-skype"></i></td>
+                                            <td>Skype</td>
+                                            <td>Aaron7pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-github"></i></td>
+                                            <td>Github</td>
+                                            <td>@Aaron7pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-phone"></i></td>
+                                            <td>Phone</td>
+                                            <td>(832) 302-0083</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-envelope"></i></td>
+                                            <td>Email</td>
+                                            <td>me@aarondancer.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="small-12 large-6 columns aboutButton">
+                                <a href="http://bit.ly/AaronDancerResume" class="button split no-pip greenButton">
+                                My Resume<span><i class="fa fa-cloud-download"></i></span>
+                                </a>
+                                <a class="button split no-pip goldButton" data-reveal-id="contactForm">
+                                Send a message<span><i class="fa fa-paper-plane"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="information">
+            <div id="experience" class="infoblock">
+                <h2>Experience</h2>
+                <h3>Present</h3>
+                <ul class="accordion" data-accordion="presentExperience">
+                    <li class="accordion-navigation">
+                        <a href="#sslcom">SSL.com - Web Developer</a>
+                        <div id="sslcom" class="content">
+                            <div class="row">
+                                <div class="small-4 columns nopadleft">
+                                    <img width="100%" src="images/companies/sslcom.svg"></img>
+                                </div>
+                                <div class="small-8 columns">
+                                    <h5>Since January 2015</h5>
+                                    <ul>
+                                        <li>
+                                            Front-end web development of the SLL.com consumer and enterprise solution using Angular.js, CSS3, and JavaScript.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#coursality">Coursality - Co-founder</a>
+                        <div id="coursality" class="content">
+                            <div class="row">
+                                <div class="small-4 columns nopadleft">
+                                    <img width="100%" src="images/companies/coursality.svg"></img>
+                                </div>
+                                <div class="small-8 columns">
+                                    <h5>Since April 2014</h5>
+                                    <ul>
+                                        <li>
+                                            Development of the online course system that adaptively delivers content to the user via machine learning. Built using Ruby on Rails, Node.js, Angular.js, and MongoDB.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#studentrnd">StudentRND - Regional CodeDay Organizer</a>
+                        <div id="studentrnd" class="content">
+                            <div class="row">
+                                <div class="small-4 columns nopadleft">
+                                    <img width="100%" src="images/companies/studentrnd.svg"></img>
+                                </div>
+                                <div class="small-8 columns">
+                                    <h5>Since April 2014</h5>
+                                    <ul>
+                                        <li>
+                                            Primary organizer and mentor for the seasonal CodeDay Houston event. Helping participants learn and break through issues with workshops and one-on-one/team mentoring.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="infoblock">
+                <h2 class="spacing">&nbsp;</h2>
+                <h3>Past</h3>
+                <ul class="accordion" data-accordion="pastExperience">
+                    <li class="accordion-navigation">
+                        <a href="#sevenpm">7PM - Senior Software Engineer</a>
+                        <div id="sevenpm" class="content">
+                            <div class="row">
+                                <div class="small-4 columns nopadleft">
+                                    <img width="100%" src="images/companies/7pm.svg"></img>
+                                </div>
+                                <div class="small-8 columns">
+                                    <h5>August 2009 - January 2015</h5>
+                                    <ul>
+                                        <li>
+                                            Lead development of an online 3D model viewer using JavaScript and Python utilizing an in-house fork of three.js and Django.
+                                        </li>
+                                        <li>
+                                            Lead development of Scriber, a full featured word processor with built-in essay formatting and plagiarism checking using C# with Windows Presentation Foundation.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#realgrowth">RealGrowth, LLC</a>
+                        <div id="realgrowth" class="content">
+                            <h5>June 2013 - August 2013</h5>
+                            <ul>
+                                <li>
+                                    Developed various websites and templates with HTML5, PHP, Ruby on Rails, and JavaScript.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="projects" class="infoblock">
+                <h2>Projects</h2>
+                <h3 class="spacing">&nbsp;</h3>
+                <ul class="accordion" data-accordion="myAccordionGroup">
+                    <li class="accordion-navigation">
+                        <a href="#morninghack">Morning Hack</a>
+                        <div id="morninghack" class="content">
+                            An app that influences
+                            wakeup timee and helps users avoid
+                            morning frustrations. 
+                            <br><br>
+                            Built using Objective-C &amp; Node.js.
+                            <br><br>
+                            Created at HackDFW winning the AT&amp;T Best Mobile App and Intel Best use of Weather Underground API awards.
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#pennjaminstravels">Pennjamin's Travels</a>
+                        <div id="pennjaminstravels" class="content">
+                            A game created at PennApps that demonstrates the to control video games with your mind. 
+                            <br>
+                            Built using the Muse EEG device and Python.
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#googlffiti">Googlffiti</a>
+                        <div id="googlffiti" class="content">
+                            A Chrome extension that lets you graffiti on the web. See the public 'wall' of a webpage, and share private markups!
+                            <br><br>
+                            Google Chrome Extension made with JavaScript, HTML5, and CSS utilizing the Parse JS API and Easeljs 
+                            <br><br>
+                            Won 1st Overall at TAMUhack
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#pulsar">Pulsar</a>
+                        <div id="pulsar" class="content">
+                            An offline data propulsion framework that allows for applications to send and receive data without using wifi or cellular data.
+                            <br><br>
+                            iOS app built using Swift, Android with Java, and the framework was made with PHP utilizing the Twilio and Mandrill APIs 
+                            <br><br>
+                            Won Best Use of Mandrill API at HackGT
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#liftshare">LiftShare</a>
+                        <div id="liftshare" class="content">
+                            A simplified Uber-like experience for the disabled utilizing existing public transit, taxis, Uber, and Lyft.
+                            <br><br>
+                            Created using Swift for iOS and ASP.NET (C# and JavaScript)
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#fourstones">4stones</a>
+                        <div id="fourstones" class="content">
+                            A 5x5 Tic-Tac-Toe 4-in-a-row game with a modern elegant UI created for many platforms (iOS, Android, Windows, OS X)
+                            <br><br>
+                            Made in C++, QML, and JavaScript with the Qt Framework and LAMP for the web API
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="projects" class="infoblock">
+                <h2 class="spacing">&nbsp;</h2>
+                <h3 class="spacing">&nbsp;</h3>
+                <ul class="accordion" data-accordion="myAccordionGroup">
+                    <li class="accordion-navigation">
+                        <a href="#timeismoney">Time is Money</a>
+                        <div id="timeismoney" class="content">
+                            An alarm clock app that charges you money if you don't wake up within X amount of time (can be set by the user)
+                            <br><br>
+                            iOS app created in Objective-C, Android in Java 
+                            <br><br>
+                            Won Best Application at CodeDay Houston
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#drivingfordollars">Driving for Dollars</a>
+                        <div id="drivingfordollars" class="content">
+                            A tool for real estate investors to quickly pin and retrieve data on potential investment properties.
+                            <br><br>
+                            iOS app created in Swift, Android in Java
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="https://github.com/aaron7pm" class="nodropdown"><i class="fa fa-github"></i>&nbsp;Check my GitHub for more!</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="research" class="infoblock hidden">
+                <h2>Research</h2>
+                <h3 class="spacing">&nbsp;</h3>
+                <ul class="accordion" data-accordion="myAccordionGroup">
+                    <li class="accordion-navigation">
+                        <a href="#panel4c">Accordion 4</a>
+                        <div id="panel4c" class="content">
+                            Panel 4. Lorem ipsum dolor
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#panel5c">Accordion 5</a>
+                        <div id="panel5c" class="content">
+                            Panel 5. Lorem ipsum dolor
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a href="#panel6c">Accordion 6</a>
+                        <div id="panel6c" class="content">
+                            Panel 6. Lorem ipsum dolor
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="awards" class="infoblock">
+                <h2>Awards</h2>
+                <h3 class="spacing">&nbsp;</h3>
+                <ul class="accordion" data-accordion="myAccordionGroup">
+                    <li class="accordion-navigation">
+                        <a>HackDFW - Best Mobile App</a>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a>HackDFW - Best use of Weather Underground API</a>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a>TAMUHack - 1st Place Overall</a>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a>HackGT - Best use of Mandrill API</a>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a>CodeDay Houston Spring 2014 - Best Application</a>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a>HackTX - 1st Place in Yodle Puzzle Challenge</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="education" class="infoblock">
+                <h2>Education</h2>
+                <h3 class="spacing">&nbsp;</h3>
+                <ul class="accordion" data-accordion="myAccordionGroup">
+                    <li class="accordion-navigation">
+                        <a href="#uh">University of Houston - B.S. Computer Science</a>
+                        <div id="uh" class="content">
+                            <div class="row">
+                                <div class="small-4 columns nopadleft">
+                                    <img width="100%" src="images/uh.svg"></img>
+                                </div>
+                                <div class="small-8 columns">
+                                    <ul>
+                                        <li>Director of Hackathon (CodeRED) for CougarCS</li>
+                                        <li>UH System Major League Hacking Coach</li>
+                                        <li>President of UHD Hacker</li>
+                                        <li>Vice President of True North Startups</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <form id="contactForm" class="contactForm redbg" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div class="row">
+                <h2 id="modalTitle" class="text-center">SEND A MESSAGE</h2>
+                <br>
+                <div id="formResult"></div>
+                <input id="subject" name="subject" placeholder="Subject" type="text"></input>
+                <input id="name" name="name" placeholder="Name" type="text"></input>
+                <input id="email" name="email" placeholder="Your email address" type="email"></input>
+                <textarea cols="" id="message" name="message" placeholder="Your message" rows=""></textarea>
+                <a class="button split no-pip goldButton" onclick="submitForm();">
+                    Send<span ><i class="fa fa-paper-plane"></i></span>
+                </a>
+            </div>
+        </form>
+        <section id="footer" class="center noSelect rs-3">
+            Copyright &copy; 2015 Aaron Dancer
+            <br>Made with <span class="heart">&hearts;</span> in Houston
+        </section>
+    </div>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
