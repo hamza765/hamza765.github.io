@@ -612,7 +612,7 @@ section .headerBlock {
 }
 
 /* Animations */
-
+/*
 @keyframes rocket-ani {
     0%, 100% {
         transform: scale(1, 1);
@@ -708,7 +708,7 @@ section .headerBlock {
         -webkit-transform: rotate( -360deg);
     }
 }
-
+*/
 .myButton {
     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
     -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
