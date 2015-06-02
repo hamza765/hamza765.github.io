@@ -436,9 +436,20 @@ section .headerBlock {
 }
 
 .project h1 {
-    color: rgb(150, 0, 0);
-    font-size: 50px;
-    text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+    display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 70px/1 "Aladin", Helvetica, sans-serif;
+  color: #810000;
+  text-align: center;
+  text-transform: normal;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow:  0px 2px 3px rgba(0,0,0,0.67) ;
+  font-size: 72px;
 }
 
 .project p {
@@ -474,26 +485,22 @@ section .headerBlock {
     color: #999;
 }
 
+.contact h2 {
+    color: #000;
+    text-shadow: 0px 0px 6px #def;
+    font-weight: bold;
+    
+}
 /* Sponsors */
 
-.sponsors {
-    background: #fff;
-}
 
-.sponsors .headerBlock {
-    color: #C8102E !important;
-}
 
-.sponsors .logos {
-    margin-top: 20px;
-}
-
-.sponsornode {
-    margin-bottom: 20px;
-}
-
-#partners {
-    margin-top: 60px;
+.error h1{
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    font-size: 72px;
+    
 }
 
 /* Footer */
