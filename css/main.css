@@ -435,9 +435,11 @@ section .headerBlock {
     color: #fff !important;
 }
 
-/*.project * {
-    color: #fff;
-}*/
+.project h1 {
+    color: rgb(150, 0, 0);
+    font-size: 50px;
+    text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+}
 
 .project p {
     font-size: 24px;
