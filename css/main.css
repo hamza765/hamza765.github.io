@@ -300,12 +300,12 @@ h2 {
 /* Project */
 
 .project {
-    background: #C8102E
+    background: #404040;
 }
 
 .project h1 {
-    color: #810000;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+    color: #E0E0E0;
+    text-shadow: 0px 0px 6px #000;
     font-size: 72px;
 }
 
@@ -318,7 +318,7 @@ h2 {
 }
 
 .project a {
-    color: #222;
+    color: #C8102E !important;
 }
 
 
