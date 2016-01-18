@@ -1,18 +1,18 @@
 jQuery(function($) {
     $(document).ready(function() {
         $('.navbar-inverse').stickUp();
-        particleground(document.getElementById("home"), {
-            directionX: 'left',
-            directionY: 'down',
-            proximity: 100,
-            dotColor: "#eee",
-            lineColor: "#999",
-            particleRadius: 4,
-            density: 20000,
-            parallaxMultiplier: 20,
-            maxSpeedX: 0,
-            maxSpeedY: 0
-        });
+        // particleground(document.getElementById("home"), {
+        //     directionX: 'left',
+        //     directionY: 'down',
+        //     proximity: 100,
+        //     dotColor: "#eee",
+        //     lineColor: "#999",
+        //     particleRadius: 4,
+        //     density: 20000,
+        //     parallaxMultiplier: 20,
+        //     maxSpeedX: 0,
+        //     maxSpeedY: 0
+        // });
     });
 
     $(".nav li a").click(function(e) {
