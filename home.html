@@ -15,94 +15,18 @@
         <div class="container">
             <div class="text-center">
                 <br>
-                <h1>HAMZA KHAN</h1>
-                
-                <h3>The Progammer You Never Knew You Needed</h3>
-                <br>
-                <a class="btn btn-danger" ng-click="showme=true">Enter</a>
+                <a class="btn btn-link" ng-click="showme=true">Oh, hello there. Click here to continue...</a>
 
             </div>
         </div>
     </section>
-    <section ng-show="showme" class="buttons">
-        <div class="container text-center ">
-            <div class="row">
-                <div class="col-md-4 box1 btn btn-info" ng-click="about=!about">
-                    <h1>About Me</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4 box2 btn btn-info" ng-click="project=!project">
-                    <h1>Projects</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-8 box3 btn btn-info">
-                    <h1>Contact</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about" class="about" ng-show="about">
+    <section class="home" ng-show="showme">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="headerBlock">About Me</h2>
-                    <p>
-                        As you may have guessed, my name is Hamza Khan. I am a Computer Science student interested in technology. My degree may say B.S. in Computer Science, but I love anything and everything to do with technology from the basic Arduino, to the mind blowing Oculus Rift.
-                    </p>
-                    <h1 class="text-center">My <span class="red">Drive</span></h1>
-                    <p>
-                        I enjoy learning about new innovations and ideas, but more than that, I enjoy working with others who share my passion. One of my favorite pastimes is going to Hackathons where i can group up with random people, start with a simple idea, and create something in 24 hours. That's the best part about being a programmer. Being able to create an image in my mind, and then sitting down for hours on end, never losing focus, and drumming out a quality program. That is my <span class="red">drive</span>.
-                    </p>
-                    <h2 class="catch text-center">Ready. <span class="red">Set. </span>CODE!</h2>
-                </div>
+            <div class="text-center">
+                <br>
+                <a class="btn btn-link" ng-click="showme=true">Welcome! I feel so honored!</a>
+
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <a ng-click="about=false" class="btn btn-success">Back</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="project" class="project" ng-show="project">
-        
-        <div class="container">
-        <h1 class="text-center"><b>Projects</b></h1>
-            <h1 class="catch text-center">Rift <span class="project">Rampage</span></h1>
-            <p class="white project">
-                My first venture into the vast world of Virtual Reality gaming. It was made at CodeRed, Houston's Premier Hackathon. Made in <span class="white"><a href="http://www.unity3d.com" target="_blank"><b>Unity</b></a></span>, Rift Rampage is a multiplayer first person shooter incorporating the <span class="white"><a href="http://www.oculus.com" target="_blank"><b>Oculus Rift</b></a></span> Virtual Reality headset and the <span class="white"><a href="http://www.leapmotion.com" target="_blank"><b>LeapMotion</b></a></span> Hand Controller.
-                <br>
-                <br> The basic idea was that two players would face each other in a 3D virtual environment, where they would shoot at each other aiming to defeat the other. The players would hold out their hands over the LeapMotion device, and it would display their virtual hands on the screen. The player makes a tapping gesture with his thumb, and a bullet would shoot from his index finger.
-                <br>
-                <h3 class="text-center"><a href="https://github.com/hamza765/Rift-Rampage" class="btn btn-success" target="_blank">GitHub</a></h3>
-            </p>
-            <br>
-            <br>
-            <h1 class="text-center">Hence</h1>
-            <p class="white project">
-                Android app created in Android Studio Geofencing app that allows users to take self-guided tours or allow emergency services to notify people of events easily. A Geofence is a point on a map with a circle around it. When a user enters the circle, they get a notification that gives details of that particular spot.
-                <br>Possible uses:
-                <br> o Self-guided tours
-                <br> o During a fire or car accident, a geofence can be placed to notify anyone nearby
-                <br> o Find locations near a user, that they never knew existed
-                <br>
-                <h3 class="text-center"><a href="https://github.com/aaron7pm/FenceHouston" class="btn btn-success" target="_blank">GitHub</a></h3>
-            </p>
-            <br>
-            <h1 class="text-center">Senior Project</h1>
-            <p class="white project">
-                My senior projects that is being made in collaboration with George Erfesoglou
-                <br> A multiplayer FPS game made in Unity and uses Photon networking for the online multiplayer.
-                <br> For my part, I will be integrating the Oculus Rift and the LeapMotion devices for gameplay. We have devised a complex method of gameplay where the Oculus will only control the direction a player looks in. It will not control the direction of the weapon. That part will be handed off to the Leap, as will navigation
-                <br>
-                <br> With your left hand, you will control your movement, and with your right, you will control the direction of your weapon.
-                <br> You will effectively be able to "peak" around a corner, before bringing your gun around to shoot.
-                <br> The game will also be cross-peripheral, so that those who do not own a Rift or a Leap can still play with a keyboard, mouse, monitor, or gamepad.
-                <br> So far, the game is up and running. Oculus integration is the easy part. Will start working on Leap integration during Summer 2015.
-                <br>
-                <h3 class="text-center"><a href="https://github.com/hamza765/Kelpie" class="btn btn-success" target="_blank">GitHub</a></h3>
-            </p>
         </div>
     </section>
     <!-- All scripts and css go down here -->
