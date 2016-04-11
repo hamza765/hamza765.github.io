@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 body {
@@ -27,11 +27,15 @@ body {
 }
 
 .red {
+    color: #C8102E !important;
+}
+
+.red-head {
     color: #b00e29 !important;
 }
 
 .redbg {
-    background: #b00e29 !important;
+    background: #C8102E !important;
 }
 
 .black {
@@ -188,7 +192,7 @@ section .headerBlock {
 }
 
 .about p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 36px;
     padding: 0;
@@ -223,7 +227,7 @@ h2 {
 }
 
 .project p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 36px;
     padding: 0;
@@ -252,7 +256,7 @@ h2 {
 
 .contact h2 {
     color: #000;
-    text-shadow: 0px 5px 10px #000;
+    text-shadow: 0px 3px 5px #000;
     font-weight: bold;
 }
 
@@ -266,4 +270,9 @@ h2 {
     background: #1e1e1e;
     color: #fff;
     font-size: 24px;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 36px;
 }
