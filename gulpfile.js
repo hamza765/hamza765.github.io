@@ -9,7 +9,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('js', function(cb) {
     pump([
-            gulp.src('lib/*.js'),
+            gulp.src('assets/js/*'),
             uglify(),
             gulp.dest('client/dist/js')
         ],
@@ -47,7 +47,7 @@ gulp.task('delete', function() {
 
 gulp.task('watch', function (){
   gulp.watch('assets/css/*.css', ['css']); 
-  gulp.watch('lib/*.js', ['js']); 
+  gulp.watch('assets/js/*.js', ['js']); 
 });
 
 //Run `gulp` for development
