@@ -1,3 +1,7 @@
+/** {
+  -webkit-transition: all 1s;
+}
+
 body {
     background: #145B7E;
 }
@@ -39,5 +43,6 @@ textarea {
     resize: none;
     background: #145B7E;
     border: 0px;
-    font-family: "Times New Roman", Georgia, Serif;
+    font-family: monospace;
 }
+*/
