@@ -1,7 +1,7 @@
 #Just a var used to set padding. I've since removed this, but its up to you.
 _gutter = 50
 #I believe this this the amount of delay between each char in milliseconds
-_writing_rate = 25
+_writing_rate = 0
 _throttle = {
   start: 4821
   stop: 5344
@@ -56,9 +56,9 @@ body {
 #my-code {
   overflow: auto;
   position: fixed; 
-  right: 1vw;
-  top: 10vh; 
-  bottom: 1vw; 
+  right: 1vh;
+  top: 50vh; 
+  bottom: 1vh; 
 }
 
 
@@ -66,86 +66,30 @@ body {
   background-color: #{_colors.console}; 
   color: #{_colors.text};
   border: 1px solid rgba(0,0,0,0.2);
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 2px;
   box-shadow: 
     0px 0px 0px 1px rgba(255,255,255,0.2),
     0px 4px 0px 2px rgba(0,0,0,0.1);
 }
 
-/* 
- * Let's make this easier to read, shall we?     
- */
-
-.comment       { color: #{_colors.dark}; }
-.selector      { color: #{_colors.selector}; }
-.selector .key { color: #{_colors.selector}; }
-.selector .int { color: #{_colors.selector}; }
-.key           { color: #{_colors.key}; }
-.int           { color: #{_colors.integer}; }
-.hex           { color: #{_colors.hex}; }
-.hex .int      { color: #{_colors.hex}; }
-.value         { color: #{_colors.value}; }
-.var           { color: #{_colors.var}; }
-.operator      { color: #{_colors.operator}; }
-.string        { color: #{_colors.string}; }
-.method        { color: #{_colors.method}; }
-.run-command   { color: #{_colors.run}; }
-
-/* 
- *
- * See? Pretty cool...             
- *       
- *
- * But let's go further.               
- *
- */
 
 \`
 
-/* 
- * Let's write some Javascript.             
- * First we write some code and then type '~' to run it.        
- */
-
-/* Let's add a 'h1' element to put my name on here. */
+~
 var title = document.createElement("h1");
 title.id = "title";
+title.innerHTML = "Hamza <em>Khan</em>";
+#{_body_selection}.appendChild(title); 
+~                 
 
-/* Now we'll add my name to it */
-title.innerHTML = "Isn't programming <em>FUN</em>?";
-
-/* Finally, let's add it to the page */
-#{_body_selection}.appendChild(title);
-             
-/* 
- * 
- * Ready?              
- * 
- * Let's run it!              
- * 
- */
-
- ~                 
-
-/*
- * Awesome! Now we need to position it.           
- * We need CSS for that.         
- */ 
- \`
-
-#my-code {
-  left: 1vw;
-  bottom: 1vw;
-  top: 49%;
-  right: 1vw;
-}
+\`
 
 #title {
   position: fixed; 
   width: 100%; 
   top: 0;
-  font-size: 28px; 
+  font-size: 48px; 
   line-height: 1;
   font-family: "Segoe UI"; 
   text-align: center;
@@ -157,41 +101,65 @@ title.innerHTML = "Isn't programming <em>FUN</em>?";
   color: #{_colors.integer};
 }
 
+\`
 
+~
+var expTitle = document.createElement("h2");
+expTitle.id = "expTitle";
+expTitle.innerHTML = "Connect With Me";
+#{_body_selection}.appendChild(expTitle); 
+~
 
-/* 
- * Ok, let's add an iframe, but we're done with the title    
- * so let's get rid of it for now      
- */
+\`
 
-#title {
-  left: 100%;
-  display: none;
+#expTitle {
+  color: #{_colors.integer};
+  position: fixed;
+  top: 40vh;
+  right: 60vw;
+} 
+
+#expTitle{
+  top: 20vh;
+  right: 70vw;
 }
 
-~\`
-
-/* Ok, now we create the iframe */      
-
-var frame = document.createElement("iframe");         
-
-/* Give it a source and id */          
-
-frame.src = "https://hamza765.github.io";                 
-frame.id = "frame";         
+\`
 
 
-/* Finally, let's add it to the page */
-#{_body_selection}.appendChild(frame); 
+~
+var gitLink = document.createElement("a");
+gitLink.id = "gitLink";
+gitLink.innerHTML = "GitHub";
+gitLink.href = "https://github.com/hamza765";
+gitLink.target = "_blank";
+#{_body_selection}.appendChild(gitLink); 
+~
 
-~\`
+\`
 
-#frame {
+
+#gitLink {
+  overflow: auto;
   position: fixed;
-  left: 1vw;
-  top: 1vw;
-  right: 1vw;
+  top: 50vh;
+  right: 60vw;
+  font-size: 20px;
+}
+
+#gitLink{
+  top: 30vh;
+  right: 75vw;
+}
+
+#gitLink {
+  color: white;
 } 
+
+\`
+~
+gitLink.className = "btn btn-primary";
+~
 
 /*
  *
@@ -199,11 +167,18 @@ frame.id = "frame";
  *
  * Hope you had fun.      
  *  
- * I'll do this again soon.       
+ * If you need to contact me (or have a job offer)       
+ * my email is hamz5678@hotmail.com
  *
+ *
+ * (This is still a WIP)
  * Goodbye!                      
  *
- */                                  
+ *
+ * Oh, and i have to give credit to Jake Albaugh who originally made the typing simulation   
+ *//
+
+
 """
 
 
@@ -230,6 +205,7 @@ $body.appendChild _script_area
 $style_elem 	= document.getElementById "style-elem"
 $code_pre 		= document.getElementById "my-code"
 $script_area 	= document.getElementById "script-area"
+
 
 # tracking states
 openComment = false
@@ -396,3 +372,5 @@ writeChars = (message, index, interval) ->
 
 # initiate the script
 writeChars(_codes, 0, _writing_rate)
+
+
