@@ -4,7 +4,7 @@
 
   _gutter = 50;
 
-  _writing_rate = 0;
+  _writing_rate = 25;
 
   _throttle = {
     start: 4821,
