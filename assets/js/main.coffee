@@ -23,162 +23,79 @@ _colors = {
   integer: "#fd971c"
   run: "#ae81ff"
 }
-_body_selection = "document.body"
+_body_selection = "$(document.body)"
 _current_code = 0
 _codes = """
-
-
-/* Hi!               
- *
- * Welcome to my website!                  
- *
- *          
- *
- * Give me a minute to put this all together.              
- */
-
 * {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-
 pre em:not(.comment) { font-style: normal; }
-
 body {
-  background-color: #{_colors.background}; 
+  background-color: #{_colors.background};
   color: #{_colors.text};
-  font-size: 13px; 
+  font-size: 13px;
   line-height: 1.4;
   margin: 0;
   -webkit-font-smoothing: subpixel-antialiased;
 }
-
-#my-code {
-  overflow: auto;
-  position: fixed; 
-  right: 1vh;
-  top: 50vh; 
-  bottom: 1vh; 
-}
-
-
-#my-code {
-  background-color: #{_colors.console}; 
-  color: #{_colors.text};
-  border: 1px solid rgba(0,0,0,0.2);
-  font-size: 20px;
-  border-radius: 2px;
-  box-shadow: 
-    0px 0px 0px 1px rgba(255,255,255,0.2),
-    0px 4px 0px 2px rgba(0,0,0,0.1);
-}
-
-
-\`
-
-~
-var title = document.createElement("h1");
-title.id = "title";
-title.innerHTML = "Hamza <em>Khan</em>";
-#{_body_selection}.appendChild(title); 
-~                 
-
-\`
-
-#title {
-  position: fixed; 
-  width: 100%; 
-  top: 0;
-  font-size: 48px; 
-  line-height: 1;
-  font-family: "Segoe UI"; 
-  text-align: center;
-  padding: 10px; 
-  margin: 0;
-}
+\`~
+var container = $("<div>");
+container.attr("class", "container");
+var row = $("<div>");
+row.attr("class", "row");
+var cellOne = $("<div>");
+cellOne.attr("class", "col-md-12");
+var title = $("<h1>");
+title.html("Hamza <em>Khan</em>");
+title.attr("id", "title");
+title.attr("class", "text-center");
+cellOne.append(title);
+row.append(cellOne);
+container.append(row);
+#{_body_selection}.append(container);
+~\`
 #title em { 
   font-style: normal;
   color: #{_colors.integer};
 }
-
-\`
-
-~
-var expTitle = document.createElement("h2");
-expTitle.id = "expTitle";
-expTitle.innerHTML = "Connect With Me";
-#{_body_selection}.appendChild(expTitle); 
-~
-
-\`
-
-#expTitle {
-  color: #{_colors.integer};
-  position: fixed;
-  top: 40vh;
-  right: 60vw;
-} 
-
-#expTitle{
-  top: 20vh;
-  right: 70vw;
-}
-
-\`
-
-
-~
-var gitLink = document.createElement("a");
-gitLink.id = "gitLink";
-gitLink.innerHTML = "GitHub";
-gitLink.href = "https://github.com/hamza765";
-gitLink.target = "_blank";
-#{_body_selection}.appendChild(gitLink); 
-~
-
-\`
-
-
-#gitLink {
-  overflow: auto;
-  position: fixed;
-  top: 50vh;
-  right: 60vw;
-  font-size: 20px;
-}
-
-#gitLink{
-  top: 30vh;
-  right: 75vw;
-}
-
-#gitLink {
-  color: white;
-} 
-
-\`
-~
-gitLink.className = "btn btn-primary";
-~
-
-/*
- *
- * Well, that's enough for today.          
- *
- * Hope you had fun.      
- *  
- * If you need to contact me (or have a job offer)       
- * my email is hamz5678@hotmail.com
- *
- *
- * (This is still a WIP)
- * Goodbye!                      
- *
- *
- * Oh, and i have to give credit to Jake Albaugh who originally made the typing simulation   
- *//
-
-
+\`~
+var rowtwo = $("<div>");
+rowtwo.attr("class", "row");
+var welcome = $("<h3>");
+welcome.html("Welcome to my website");
+welcome.attr("id", "welcome");
+welcome.attr("class", "text-center");
+rowtwo.append(welcome);
+container.append(rowtwo);
+~\`
+\`~
+var rowthree = $("<div>");
+rowthree.attr("class", "row");
+var welcome = $("<h3>");
+welcome.html("Please be patient as I build it. ");
+welcome.attr("id", "welcome");
+welcome.attr("class", "text-center");
+rowthree.append(welcome);
+container.append(rowthree);
+~\`
+\`~
+var rowthree = $("<div>");
+rowthree.attr("class", "row");
+var projectOne = $("<div>");
+projectOne.attr("class", "col-md-3")
+var projectTwo = $("<div>");
+projectTwo.attr("class", "col-md-3 col-md-offset-1")
+var projectThree = $("<div>");
+projectThree.attr("class", "col-md-3 col-md-offset-1")
+projectOne.html('<h5 class="text-center">SSLTools.com</h5>')
+rowthree.append(projectOne);
+projectTwo.html('<h5 class="text-center">Imguraffe</h5>')
+rowthree.append(projectTwo);
+projectThree.html('<h5 class="text-center">LazyArg</h5>')
+rowthree.append(projectThree);
+container.append(rowthree);
+~\`
 """
 
 
@@ -193,7 +110,7 @@ createElement = (tag, id) ->
 	  
 # create our primary elements
 _style_elem 	= createElement "style", "style-elem"
-_code_pre 		= createElement "pre",   "my-code"
+_code_pre 		= createElement "div",   "my-code"
 _script_area 	= createElement "div",   "script-area"
 
 # append our primary elements to the body
