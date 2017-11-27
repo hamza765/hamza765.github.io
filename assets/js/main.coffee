@@ -34,7 +34,7 @@ _codes = """
  *
  *          
  *
- * Give me a minute to put this all together.              
+ * Give me a bit to put this all together.              
  */
 
 * {
@@ -115,41 +115,45 @@ expTitle.innerHTML = "Connect With Me";
 #expTitle {
   color: #{_colors.integer};
   position: fixed;
+  width: 100%; 
   top: 40vh;
-  right: 60vw;
 } 
 
 #expTitle{
   top: 20vh;
-  right: 70vw;
+  text-align: center;
 }
 
 \`
 
 
 ~
+var it = document.createElement("div");
+it.id = "it";
 var gitLink = document.createElement("a");
 gitLink.id = "gitLink";
 gitLink.innerHTML = "GitHub";
 gitLink.href = "https://github.com/hamza765";
 gitLink.target = "_blank";
-#{_body_selection}.appendChild(gitLink); 
+it.appendChild(gitLink)
+#{_body_selection}.appendChild(it); 
 ~
 
 \`
 
 
 #gitLink {
-  overflow: auto;
   position: fixed;
   top: 50vh;
-  right: 60vw;
   font-size: 20px;
 }
 
 #gitLink{
   top: 30vh;
-  right: 75vw;
+}
+
+#it {
+  text-align: center
 }
 
 #gitLink {
@@ -167,15 +171,16 @@ gitLink.className = "btn btn-primary";
  *
  * Hope you had fun.      
  *  
- * If you need to contact me (or have a job offer)       
- * my email is hamz5678@hotmail.com
+ * If you need to contact me       
+ * my email is contact@hamzakhan.org
  *
  *
  * (This is still a WIP)
  * Goodbye!                      
  *
  *
- * Oh, and i have to give credit to Jake Albaugh who originally made the typing simulation   
+ * Oh, and i have to give credit to Jake Albaugh 
+ * who originally made the typing simulation   
  *//
 
 
